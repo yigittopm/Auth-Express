@@ -8,7 +8,7 @@ const dashboardRoute = require("./routes/dashboard")
 // Config
 dotenv.config()
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 3000;
 
 // Connect to db
 mongoose.connect(process.env.MONGO_URI, () => {
