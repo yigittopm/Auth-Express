@@ -14,19 +14,20 @@
     background: none;
     background-color: #f8f6f6;
     margin-bottom: 2px;
-    font-size: 16px;
+    font-size: 24px;
 }
 
 #login-title {
     position:fixed;
     color: #950740;
     z-index: 0;
-    font-size: 250px;
+    font-size: 350px;
 }
 
 #login-button {
     opacity: 1;
-    background-color: #1f1c1d;
+    background-color: #4E4E50;
+    font-size: 24px;
     color: #f8f6f6;
 }
 
