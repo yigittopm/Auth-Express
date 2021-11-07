@@ -1,0 +1,45 @@
+#register-div {
+    display: flex;
+}
+
+#register-form {
+    background: none !important;
+    text-align: center;
+    position: relative;
+    opacity: 0.9;
+    z-index: 1;
+}
+
+#register-form input {
+    background: none;
+    background-color: #f8f6f6;
+    margin-bottom: 2px;
+    font-size: 16px;
+}
+
+#register-title {
+    position:fixed;
+    color: #950740;
+    z-index: 0;
+    font-size: 250px;
+}
+
+#register-button {
+    opacity: 1;
+    background-color: #1f1c1d;
+    color: #f8f6f6;
+}
+
+#register-button:hover {
+    opacity: 0.7;
+    background-color: #464142;
+}
+
+
+.renkler {
+    color: #1A1A1D;
+    color: #4E4E50;
+    color: #6F2232;
+    color: #950740;
+    color: #C3073F;
+}
