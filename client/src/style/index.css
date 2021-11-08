@@ -4,3 +4,15 @@
     box-sizing: border-box;
     background-color: #1A1A1D;
 }
+
+.is-invalid {
+    color : #ff004c !important;
+}
+
+.renkler {
+    color: #1A1A1D;
+    color: #4E4E50;
+    color: #6F2232;
+    color: #950740;
+    color: #C3073F;
+}

@@ -7,7 +7,8 @@ export const LoginSlice = createSlice({
         email: "",
         password: "",
         user: "",
-        token: ""
+        statusCode: null,
+        token: null
     },
     reducers: {
         setUser: (state, action) => {
@@ -22,6 +23,7 @@ export const {setUser} = LoginSlice.actions
 
 export const login = (data) => {
     return async dispatch => {
+        dispatch(setUser(data))
         console.log(data)
     }
 }

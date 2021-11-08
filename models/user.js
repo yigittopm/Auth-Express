@@ -5,13 +5,13 @@ const userSchema = new mongoose.Schema({
         type: String,
         required: true,
         min: 3,
-        max: 255
+        max: 100
     },
     email: {
         type: String,
         required: true,
         min: 8,
-        max: 255
+        max: 100
     },
     password: {
         type: String,
