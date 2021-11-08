@@ -61,7 +61,7 @@ export default function RegisterScreen() {
             <marquee className="row" id="register-title" behavior="alternate" direction="right" scrollAmount="5">Register</marquee>
 
             <form onSubmit={handleSubmit} id="register-form" className="">
-                <div className="form-group">
+                <div className="register-form-gr form-group">
                     <input 
                         name="name" 
                         type="text" 
@@ -71,7 +71,7 @@ export default function RegisterScreen() {
                         placeholder="Name"/>
                 </div>
 
-                <div className="form-group">
+                <div className="register-form-gr form-group">
                     <input 
                         name="email" 
                         type="email" 
@@ -81,7 +81,7 @@ export default function RegisterScreen() {
                         placeholder="Email"/>
                 </div>
 
-                <div className="form-group">
+                <div className="register-form-gr form-group">
                     <input 
                         name="password" 
                         type="password" 
@@ -90,7 +90,7 @@ export default function RegisterScreen() {
                         value={values.password}
                         placeholder="Password"/>
                 </div>
-                <div className="form-group">
+                <div className="register-form-gr form-group">
                     <button 
                         type="submit"
                         id="register-button" 

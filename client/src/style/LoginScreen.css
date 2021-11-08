@@ -17,6 +17,10 @@
     font-size: 24px;
 }
 
+.login-form-gr {
+    background: none !important;
+}
+
 #login-title {
     position:fixed;
     color: #950740;

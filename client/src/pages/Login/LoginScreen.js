@@ -30,14 +30,14 @@ export default function LoginScreen() {
             <marquee className="row" id="login-title" behavior="alternate" direction="right" scrollAmount="10">Login</marquee>
 
             <form id="login-form" className="">
-                <div className="form-group">
-                    <input className="form-control" placeholder="Email"/>
+                <div className="login-form-gr form-group">
+                    <input className="form-control" placeholder="john@example.com"/>
                 </div>
 
-                <div className="form-group">
-                    <input className="form-control" placeholder="Password"/>
+                <div className="login-form-gr form-group">
+                    <input type="password" className="form-control" placeholder="•••••••••"/>
                 </div>
-                <div className="form-group">
+                <div className="login-form-gr form-group">
                     <button id="login-button" className="form-control btn">Login</button>
                 </div>
             </form>

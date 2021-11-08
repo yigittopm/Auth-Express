@@ -17,6 +17,10 @@
     font-size: 24px;
 }
 
+.register-form-gr {
+    background: none !important;
+}
+
 #register-title {
     position:fixed;
     color: #950740;
@@ -35,7 +39,6 @@
     opacity: 0.7;
     background-color: #464142;
 }
-
 
 .renkler {
     color: #1A1A1D;
