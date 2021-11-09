@@ -1,9 +1,16 @@
 import "../../style/LoginScreen.css"
 import "../../style/index.css"
 import { useFormik } from "formik";
+import { useHistory } from "react-router-dom"
+import { login } from "./redux/LoginSlice"
+import { useDispatch, useSelector } from "react-redux"
 import * as Yup from "yup";
 
 export default function LoginScreen() {
+
+    const dispatch = useDispatch();
+    const history = useHistory();
+    const { token } = useSelector(state => state.login)
 
     const initialValues = {
       email: "",
@@ -35,9 +42,11 @@ export default function LoginScreen() {
         initialValues,
         validationSchema: LoginSchema,
         onSubmit: async (values) => {
-          const { email, password } = values;
-          //const res = await dispatch(register(values));
-          console.log(values)
+          await dispatch(login(values));
+          await localStorage.setItem("userToken", token)
+          if(token !== null) {
+            history.push("/")
+          }
         },
     });
 

@@ -25,11 +25,18 @@ export const RegisterSlice = createSlice({
                 ...state,
                 statusCode: action.payload
             }
+        },
+        createFail: (state, action) => {
+            console.log(action.payload)
+            return {
+                ...state,
+                statusCode: action.payload
+            }
         }
     }
 })
 
-export const { createUser, createSuccess } = RegisterSlice.actions
+export const { createUser, createSuccess, createFail } = RegisterSlice.actions
 
 export const register = (data) => {
     return async dispatch => {
@@ -42,7 +49,7 @@ export const register = (data) => {
                     }
                 })
                 .catch((err) => {
-                    console.log(err)
+                    dispatch(createFail(err))
                 })
 
         }catch(err) {

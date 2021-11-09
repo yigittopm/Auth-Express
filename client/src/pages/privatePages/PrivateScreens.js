@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Switch, Route} from "react-router-dom"
 
-import ProfileScreen from "./ProfileScreen"
+import ProfileScreen from "./Profile/ProfileScreen"
 import PageNotFoundScreen from "../PageNotFoundScreen"
 
 export default function PrivateScreens() {

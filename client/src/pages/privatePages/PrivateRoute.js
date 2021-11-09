@@ -2,12 +2,13 @@ import React from "react";
 import { Route, Redirect } from "react-router-dom";
 
 export default function PrivateRoute({ component: Component, ...rest }) {
-  const a = true;
+
+  const isAuth = localStorage.getItem("userToken")
   return (
     <Route
       {...rest}
       render={(props) =>
-        a ? <Component {...props} /> : <Redirect to="/login" />
+        isAuth ? <Component {...props} /> : <Redirect to="/login" />
       }
     />
   );
